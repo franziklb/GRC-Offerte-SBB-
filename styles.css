@@ -101,10 +101,10 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .team { padding: 96px 0; }
-.profile-card { display: grid; grid-template-columns: minmax(310px, .9fr) minmax(0, 1.55fr); margin-top: 44px; border: 1px solid var(--g20); background: var(--white); box-shadow: 0 18px 45px rgba(48,31,25,.07); }
+.profile-card { align-items: start; display: grid; grid-template-columns: minmax(310px, .9fr) minmax(0, 1.55fr); margin-top: 44px; border: 1px solid var(--g20); background: var(--white); box-shadow: 0 18px 45px rgba(48,31,25,.07); }
 .profile-card:first-of-type { margin-top: 0; }
-.profile-media { min-height: 100%; background: #111; }
-.profile-media video { display: block; width: 100%; height: 100%; min-height: 420px; object-fit: cover; background: #111; }
+.profile-media {background: #111; }
+.profile-media video {display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover; background: #111; }
 .video-placeholder { display: grid; place-items: center; min-height: 420px; background: linear-gradient(145deg, var(--bp-deep-red), #1f1514); color: var(--white); text-align: center; }
 .video-placeholder span { font-size: 64px; font-weight: 700; letter-spacing: -.05em; }
 .video-placeholder p { margin: 0; color: #f6dfe1; }
