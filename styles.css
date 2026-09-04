@@ -11,7 +11,7 @@
   --g30: #ccc1bc;
   --g50: #7c6f69;
   --g70: #3d3733;
-  --max: 1650px;
+  --max: 1450px;
   --pad: 32px;
 }
 
@@ -107,11 +107,9 @@ img { display: block; max-width: 100%; height: auto; }
 .profile-card {
   position: relative;
   display: grid;
-
-  grid-template-columns:
-    minmax(450px, 58%)
-    minmax(0, 1fr);
-
+grid-template-columns:
+  minmax(350px, 50%)
+  minmax(0, 1fr);
   align-items: start;
   margin-top: 140px;
   overflow: visible;
@@ -134,19 +132,6 @@ img { display: block; max-width: 100%; height: auto; }
   transform: translateX(-50%);
   width: 500px;
   height: 1px;
-  background: var(--g20);
-}
-
-  position: absolute;
-
-  top: -70px;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  width: 180px;
-  height: 1px;
-
   background: var(--g20);
 }
 
