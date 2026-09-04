@@ -106,31 +106,35 @@ img { display: block; max-width: 100%; height: auto; }
 
 .profile-card {
   position: relative;
-
   display: grid;
-  grid-template-columns: 800px minmax(0, 1fr);
+
+  grid-template-columns:
+    minmax(450px, 58%)
+    minmax(0, 1fr);
 
   align-items: start;
-
   margin-top: 140px;
-
   overflow: visible;
-
   border: none;
-
   background: transparent;
-
   box-shadow: none;
-
-  gap: 40px;
+  gap: 64px;
 }
+
 
 .profile-card:first-of-type {
   margin-top: 0;
 }
 
 .profile-card:not(:first-of-type)::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 500px;
+  height: 1px;
+  background: var(--g20);
 }
 
   position: absolute;
@@ -231,7 +235,7 @@ img { display: block; max-width: 100%; height: auto; }
 .site-footer { padding: 24px 0; border-top: 1px solid var(--g20); }
 .footer-row { display: flex; justify-content: space-between; gap: 16px; color: var(--g50); font-size: 12px; }
 
-@media (max-width: 980px) {
+@media (max-width: 1400px){
 
   .coverage-grid {
     grid-template-columns: 1fr;
